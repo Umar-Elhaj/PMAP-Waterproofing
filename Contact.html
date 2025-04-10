@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive-style.css">
-    <link rel="stylesheet" href="partners_carousel.css">
-    <script src="partners_carousel.js"></script>
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Contactez PMAP - Experts en étanchéité. Demandez un devis ou posez vos questions à notre équipe professionnelle.">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/responsive-style.css">
+    <link rel="stylesheet" href="/style/partners_carousel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>PMAP-contact</title>
+    <title>Contact PMAP | Experts en Étanchéité</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">PMAP</a>
+          <a class="navbar-brand" href="index.html">
+            <img src="/img/logo.jpg" alt="Logo PMAP" height="40" class="d-inline-block align-top me-2">
+            PMAP
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">ACCUIEL</a>
+                <a class="nav-link" aria-current="page" href="index.html">ACCUEIL</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Engagements.html">NOS ENGAGEMENTS</a>
@@ -39,50 +42,126 @@
           </div>
         </div>
     </nav>
-    <section id="contact" class="container">
-        <h2>CONTACTEZ NOUS</h2>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Noms et Prénoms</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="noms et prénoms ici">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Addresse mail</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Numéro de téléphone</label>
-          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="6XX XXX XXX">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </section>
 
-    <section id="partenaire" class="container">
-        <h2>NOS PARTENAIRES</h2>
+    <main class="container my-5">
+        <section id="contact" class="contact-form mb-5">
+            <h2 class="text-center mb-4">CONTACTEZ-NOUS</h2>
+            <form class="needs-validation" novalidate>
+                <div class="mb-4">
+                    <label for="fullName" class="form-label">Noms et Prénoms</label>
+                    <input type="text" class="form-control form-control-lg" id="fullName" placeholder="Vos noms et prénoms" required>
+                    <div class="invalid-feedback">
+                        Veuillez entrer votre nom complet.
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="emailAddress" class="form-label">Adresse mail</label>
+                    <input type="email" class="form-control form-control-lg" id="emailAddress" placeholder="votre@email.com" required>
+                    <div class="invalid-feedback">
+                        Veuillez entrer une adresse email valide.
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="phoneNumber" class="form-label">Numéro de téléphone</label>
+                    <input type="tel" class="form-control form-control-lg" id="phoneNumber" placeholder="6XX XXX XXX" required>
+                    <div class="invalid-feedback">
+                        Veuillez entrer un numéro de téléphone valide.
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="messageText" class="form-label">Votre message</label>
+                    <textarea class="form-control form-control-lg" id="messageText" rows="5" placeholder="Décrivez votre projet ou posez votre question..." required></textarea>
+                    <div class="invalid-feedback">
+                        Veuillez écrire votre message.
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Envoyer le message</button>
+                </div>
+            </form>
+        </section>
 
-       <div class="carousel">
-          <div class="carousel-inner">
-              <div class="slide"><img src="/partners/Atlantique.jpg" alt="Image 1"></div>
-              <div class="slide"><img src="/partners/bicec.jpg" alt="Image 2"></div>
-              <div class="slide"><img src="/partners/cecaw.jpg" alt="Image 3"></div>
-              <div class="slide"><img src="/partners/hopital.jpg" alt="Image 3"></div>
-              <div class="slide"><img src="/partners/kalfrelec.jpg" alt="Image 3"></div>
-              <div class="slide"><img src="/partners/magil.jpg" alt="Image 3"></div>
-              <div class="slide"><img src="/partners/movis.jpg" alt="Image 3"></div>
-              <div class="slide"><img src="/partners/well.jpg" alt="Image 3"></div>
-
-          </div>
-              <div class="carousel-controls">
-                  <i class='bx bxs-chevron-left' id="prev"></i>
-                  <i class='bx bxs-chevron-right' id="next"></i>
-              </div>
-              <div class="carousel-dots"></div>
+        <section id="partenaire" class="partners-section">
+            <h2 class="text-center mb-5">NOS PARTENAIRES</h2>
+            <img src="/img/Logo partenaire.png" alt="Partenaire">
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-4"><i class='bx bx-water me-2'></i> PMAP</h3>
+                    <p>Experts en prévention et réparation des fuites d'eau depuis 2010. Nous protégeons vos biens avec des solutions durables et innovantes.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class='bx bxl-facebook-circle fs-4'></i></a>
+                        <a href="#" class="text-white me-3"><i class='bx bxl-twitter fs-4'></i></a>
+                        <a href="#" class="text-white me-3"><i class='bx bxl-linkedin fs-4'></i></a>
+                        <a href="#" class="text-white"><i class='bx bxl-instagram-alt fs-4'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h6 mb-4">Navigation</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="Engagements.html" class="text-white text-decoration-none">Engagements</a></li>
+                        <li class="mb-2"><a href="Service.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="FAQ.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="Contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h6 mb-4">Services</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Détection de fuites</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Réparation sans tranchée</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Maintenance préventive</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Expertise assurance</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Installation de systèmes anti-fuite</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h6 mb-4">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class='bx bx-map me-2'></i> Makepe ront point petit pays</li>
+                        <li class="mb-2"><i class='bx bx-phone me-2'></i> +237 690 252 310</li>
+                        <li class="mb-2"><i class='bx bx-envelope me-2'></i> pmandpartnerssarl@gmail.com</li>
+                        <li class="mb-2"><i class='bx bx-time me-2'></i> Lun-Ven: 8h-19h / Sam: 9h-17h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 PMAP. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Mentions légales</a>
+                    <a href="#" class="text-white text-decoration-none me-3">CGV</a>
+                    <a href="#" class="text-white text-decoration-none">Politique de confidentialité</a>
+                </div>
+            </div>
         </div>
-
-    </section>
-    <script src="partners_carousel.js"></script>
+    </footer>
+    <script src="/js/partners_carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        // Validation du formulaire
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </body>
 </html>

@@ -1,78 +1,471 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive-style.css">
+    <meta name="description" content="PMAP - Nos services professionnels en étanchéité BTP, climatisation et électricité bâtiment">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/responsive-style.css">
+    <link rel="stylesheet" href="/style/partners_carousel.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>PMAP-contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>PMAP - Nos Services | Expertise en Étanchéité BTP</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">PMAP</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">ACCUIEL</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Engagements.html">NOS ENGAGEMENTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Service.html">NOS SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="FAQ.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="Contact.html">CONTACT</a>
-              </li>
-            </ul>
-          </div>
+    <!-- Navigation améliorée -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 d-flex align-items-center" href="index.html">
+                <i class='bx bx-water text-primary me-2'></i> PMAP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Engagements.html">NOS ENGAGEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="Service.html">NOS SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="Contact.html">Devis Gratuit</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <section id="service" class="container">
-        <h2>NOS SERVICES</h2>
-        <p><b>PM AND PARTNERS SARL</b> est une jeune entreprise spécialisée dans l'étanchéité BTP. 
-          Nous représentons la Société Française <b>AXTER COLETANCHE</b>, premier fabriquant des membranes 
-          d’étanchéité et vernis dans son haut de gamme membranes d’étanchéité et verniscertifiées conforme au Cameroun et 
-          travaillons dans d’autres pays de l’Afrique Centrale et quelques Pays de l’Afrique de l’Ouest.
-        </p>
-        <li class="headline">Nos spécialités</li>
-        <ul>
-          <li>Electricité bâtiment.</li>
-          <li>Etanchéité bâche d’eau.</li>
-          <li>Prestations diverses et négoces.</li>
-          <li>Etudes et expertises en étanchéité.</li>
-          <li>Entretien de l’étanchéité sur tous types de supports.</li>
-          <li>Peinture bâtiments. Piscines (construction, rénovation etentretien)</li>
-          <li>Etanchéité travaux publics (tablier sur les ponts, ponceaux etéchangeur).</li>
-          <li>Ventes, installation et entretien des splits et centrales de climatisation.</li>
-          <li>Etanchéité toiture terrasse protection lourde (paves, dallettes) rapportées.</li>
-          <li>Etanchéité des EEP (évacuation des eaux pluviales), fabrication des naissances en plomb laminés 25/10 d’épaisseur selon le 
-            diamètre du tuyau PVC.</li>
-          <li>Etanchéité bâtiment (étanchéité toiture, terrasses accessibles et inaccessibles, Toitures bois, bacs aciers, pièces humides. 
-            Parois enterrées, cuvelage et chenaux).</li>
-            <li>Notre direction technique est supervisée par un jeûne camerounais diplômé de l’école Axter de France. Poseur agrée 
-              des membranes bitumineuses SBS, il dispose d’une longue expérience avérée dans ces spécialités et une parfaite 
-              connaissance dans ces domaines.</li>
-          
-        </ul>
-
-
-
+    <section id="service">
+        <header class="services-hero bg-gradient-primary text-white py-5">
+            <div class="container py-5 align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="fw-bold mb-4 animate__animated animate__fadeInDown">Nos Services Professionnels</h1>
+                        <p class="lead mb-4 animate__animated animate__fadeInUp">Expertise certifiée en étanchéité BTP, climatisation et électricité bâtiment</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
     </section>
-    <section id="partenaire" class="container">
-        <h2>NOS REALISATION</h2>
-
-    </section>
+    <!-- Hero Section Services -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h2 class="mb-4"><span class="text-primary">PM AND PARTNERS SARL</span></h2>
+                            <p class="lead">Entreprise spécialisée en étanchéité BTP et représentant officiel d'<strong>AXTER COLETANCHE</strong> en Afrique Centrale et de l'Ouest.</p>
+                            <p>Nous proposons des solutions d'étanchéité haut de gamme avec des membranes et vernis certifiés conformes aux normes camerounaises et internationales.</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <i class='bx bx-certification fs-1 text-primary me-3'></i>
+                                <div>
+                                    <h5 class="mb-0">Poseur agréé</h5>
+                                    <p class="mb-0 small">Membranes bitumineuses SBS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Notre Expertise</h3>
+                            <p>Notre direction technique est supervisée par un expert camerounais diplômé de l'école Axter de France, disposant d'une longue expérience avérée dans ces spécialités.</p>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <div class="d-flex mb-3">
+                                        <i class='bx bx-check-circle text-primary me-2'></i>
+                                        <span>Savoir-faire français</span>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <i class='bx bx-check-circle text-primary me-2'></i>
+                                        <span>Matériaux certifiés</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex mb-3">
+                                        <i class='bx bx-check-circle text-primary me-2'></i>
+                                        <span>Équipe qualifiée</span>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <i class='bx bx-check-circle text-primary me-2'></i>
+                                        <span>Intervention rapide</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="Contact.html" class="btn btn-primary mt-3">Contactez notre expert</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Services -->
+    <section id="services-list" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title position-relative d-inline-block">Nos Domaines d'Expertise</h2>
+                <p class="lead text-muted">Découvrez l'étendue de nos compétences professionnelles</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Étanchéité Bâtiment -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class='bx bx-building-house fs-2'></i>
+                            </div>
+                            <h3 class="h5">Étanchéité Bâtiment</h3>
+                            <ul class="service-list">
+                                <li>Toitures et terrasses (accessibles/inaccessibles)</li>
+                                <li>Toitures bois et bacs aciers</li>
+                                <li>Pièces humides et cuvelage</li>
+                                <li>Parois enterrées et chenaux</li>
+                            </ul>
+                            <a href="#" class="btn btn-link ps-0">En savoir plus <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étanchéité TP -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class='bx bx-road fs-2'></i>
+                            </div>
+                            <h3 class="h5">Étanchéité Travaux Publics</h3>
+                            <ul class="service-list">
+                                <li>Tabliers sur les ponts</li>
+                                <li>Ponceaux et échangeurs</li>
+                                <li>Protections lourdes (pavés, dallettes)</li>
+                                <li>Évacuation des eaux pluviales (EEP)</li>
+                            </ul>
+                            <a href="#" class="btn btn-link ps-0">En savoir plus <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climatisation -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class='bx bx-cool fs-2'></i>
+                            </div>
+                            <h3 class="h5">Climatisation</h3>
+                            <ul class="service-list">
+                                <li>Vente d'équipements</li>
+                                <li>Installation de splits et centrales</li>
+                                <li>Maintenance préventive et curative</li>
+                                <li>Dépannage 24h/24</li>
+                            </ul>
+                            <a href="#" class="btn btn-link ps-0">En savoir plus <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Électricité -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class='bx bx-bulb fs-2'></i>
+                            </div>
+                            <h3 class="h5">Électricité Bâtiment</h3>
+                            <ul class="service-list">
+                                <li>Installation électrique neuve</li>
+                                <li>Mise aux normes</li>
+                                <li>Tableaux électriques</li>
+                                <li>Dépannage et maintenance</li>
+                            </ul>
+                            <a href="#" class="btn btn-link ps-0">En savoir plus <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Piscines -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class='bx bx-swim fs-2'></i>
+                            </div>
+                            <h3 class="h5">Piscines</h3>
+                            <ul class="service-list">
+                                <li>Construction neuve</li>
+                                <li>Rénovation complète</li>
+                                <li>Étanchéité spécifique</li>
+                                <li>Entretien et maintenance</li>
+                            </ul>
+                            <a href="#" class="btn btn-link ps-0">En savoir plus <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expertises -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4">
+                                <i class='bx bx-file fs-2'></i>
+                            </div>
+                            <h3 class="h5">Études & Expertises</h3>
+                            <ul class="service-list">
+                                <li>Diagnostics techniques</li>
+                                <li>Conseils en étanchéité</li>
+                                <li>Plans de prévention</li>
+                                <li>Expertises pour assurances</li>
+                            </ul>
+                            <a href="#" class="btn btn-link ps-0">En savoir plus <i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Partenaire -->
+    <section id="partenaire" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title position-relative d-inline-block">Notre Partenaire Officiel</h2>
+                <p class="lead text-muted">Nous représentons exclusivement les produits de qualité</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://via.placeholder.com/300x150?text=AXTER+COLETANCHE" alt="Logo Axter Coletanche" class="img-fluid mb-4" style="max-height: 100px;">
+                            <h3 class="h4">AXTER COLETANCHE</h3>
+                            <p class="mb-4">Premier fabricant français de membranes d'étanchéité et vernis haut de gamme, certifiés conformes aux normes internationales.</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="mx-3 text-center">
+                                    <div class="fs-3 text-primary">25+</div>
+                                    <div class="text-muted small">Ans d'expérience</div>
+                                </div>
+                                <div class="mx-3 text-center">
+                                    <div class="fs-3 text-primary">40+</div>
+                                    <div class="text-muted small">Pays</div>
+                                </div>
+                                <div class="mx-3 text-center">
+                                    <div class="fs-3 text-primary">100+</div>
+                                    <div class="text-muted small">Produits</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-4">Pourquoi choisir Axter ?</h3>
+                            <ul class="partner-benefits">
+                                <li>
+                                    <i class='bx bx-check-circle text-primary me-2'></i>
+                                    <span>Technologie française de pointe</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-check-circle text-primary me-2'></i>
+                                    <span>Résistance aux conditions climatiques extrêmes</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-check-circle text-primary me-2'></i>
+                                    <span>Garanties produits étendues</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-check-circle text-primary me-2'></i>
+                                    <span>Formation continue des poseurs</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-check-circle text-primary me-2'></i>
+                                    <span>Adaptation aux spécificités locales</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Voir les certifications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réalisations -->
+    <section id="realisations" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title position-relative d-inline-block">Nos Réalisations</h2>
+                <p class="lead text-muted">Découvrez quelques-uns de nos projets récents</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Projet 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400?text=Toiture+Terrase" class="card-img-top" alt="Toiture Terrasse">
+                        <div class="card-body">
+                            <h3 class="h5">Étanchéité Toiture Terrasse</h3>
+                            <p class="text-muted small">Complexe résidentiel à Douala</p>
+                            <p>Mise en œuvre d'une membrane SBS avec protection lourde par dalles sur plots.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">1200 m²</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400?text=Pont+Autoroute" class="card-img-top" alt="Pont Autoroute">
+                        <div class="card-body">
+                            <h3 class="h5">Étanchéité Tablier de Pont</h3>
+                            <p class="text-muted small">Autoroute Yaoundé-Douala</p>
+                            <p>Étanchéité bicouche avec protection métallique pour pont autoroutier.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">850 m linéaires</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400?text=Piscine+Hôtel" class="card-img-top" alt="Piscine Hôtel">
+                        <div class="card-body">
+                            <h3 class="h5">Piscine Hôtelière</h3>
+                            <p class="text-muted small">Hôtel 5* à Yaoundé</p>
+                            <p>Construction et étanchéité de piscine avec système de filtration intégré.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">120 m³</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary px-5">Voir toutes nos réalisations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="mb-3">Prêt à concrétiser votre projet ?</h2>
+                    <p class="mb-0">Notre équipe d'experts est à votre disposition pour étudier vos besoins et vous proposer la solution la plus adaptée.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="Contact.html" class="btn btn-light btn-lg px-5">Demander un devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-4"><i class='bx bx-water me-2'></i> PMAP</h3>
+                    <p>Experts en étanchéité BTP, climatisation et électricité bâtiment depuis 2010. Solutions durables et innovantes.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class='bx bxl-facebook-circle fs-4'></i></a>
+                        <a href="#" class="text-white me-3"><i class='bx bxl-twitter fs-4'></i></a>
+                        <a href="#" class="text-white me-3"><i class='bx bxl-linkedin fs-4'></i></a>
+                        <a href="#" class="text-white"><i class='bx bxl-instagram-alt fs-4'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h6 mb-4">Navigation</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="Engagements.html" class="text-white text-decoration-none">Engagements</a></li>
+                        <li class="mb-2"><a href="Service.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="FAQ.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="Contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h6 mb-4">Services</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Étanchéité Bâtiment</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Étanchéité TP</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Climatisation</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Électricité</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Piscines</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="h6 mb-4">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class='bx bx-map me-2'></i> Makepe rond point petit pays, Douala</li>
+                        <li class="mb-2"><i class='bx bx-phone me-2'></i> +237 690 252 310</li>
+                        <li class="mb-2"><i class='bx bx-envelope me-2'></i> pmandpartnerssarl@gmail.com</li>
+                        <li class="mb-2"><i class='bx bx-time me-2'></i> Lun-Ven: 8h-19h / Sam: 9h-17h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 PM AND PARTNERS SARL. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Mentions légales</a>
+                    <a href="#" class="text-white text-decoration-none">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.service-card, .project-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
 </body>
 </html>
