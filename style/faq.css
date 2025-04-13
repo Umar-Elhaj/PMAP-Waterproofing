@@ -1,0 +1,52 @@
+  
+  /* FAQ avec accordéon moderne */
+  #FAQ {
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  
+  #FAQ h1 {
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  #FAQ p {
+    color: var(--secondary-blue);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #FAQ li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 0 1rem 0 1rem;
+    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+    transform: rotate(-15deg);
+  }
+  
+  #FAQ a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+  }
+  
+  #FAQ a:hover {
+    color: var(--original-white);
+  }
+  
+  #FAQ a:hover::after {
+    width: 100%;
+  }

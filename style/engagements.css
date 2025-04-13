@@ -1,0 +1,62 @@
+ /* Engagements section avec effet de carte */
+ #Engagements {
+    padding: 1.5rem 2rem;
+    background-color: var(--primary-blue);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  #Engagements h1{
+    color: var(--original-white);
+    font-weight: bold;
+  }
+  
+  #Engagements li {
+    margin: 1.5rem 0;
+    padding-left: 3rem;
+    position: relative;
+    list-style-type: none;
+  }
+  
+  #Engagements li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 50% 50% 0 50%;
+    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+    transform: rotate(45deg);
+  }
+  
+  /* Valeurs section avec mise en page moderne */
+  #Valeurs {
+    padding: 1.5rem 2rem;
+    background-color: var(--secondary-blue);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  #Valeurs h1{
+    color: var(--original-white);
+    font-weight: bold;
+  }
+  
+  #Valeurs li {
+    margin: 1.5rem 0;
+    padding-left: 3rem;
+    position: relative;
+    list-style-type: none;
+  }
+  
+  #Valeurs li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 50% 0 50% 50%;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    transform: rotate(-45deg);
+  }

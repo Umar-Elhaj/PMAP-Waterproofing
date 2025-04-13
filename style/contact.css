@@ -1,0 +1,39 @@
+  /* Contact section avec formulaire stylé */
+  #contact {
+    padding: 3rem 2rem 4rem 2rem;
+    background: var(--medium-gray);
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  #contact h2 {
+    color: var(--original-white);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  #contact h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-orange), var(--primary-blue));
+    border-radius: 5px;
+  }
+
+  #partenaire img{
+    width: 100%;
+  }
+
+  .d-grid button{
+    transition: ease-in-out 0.1s;
+  }
+  .d-grid button:hover{
+    background-color: rgb(26, 116, 251);
+  }

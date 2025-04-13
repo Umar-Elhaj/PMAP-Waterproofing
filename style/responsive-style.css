@@ -29,6 +29,9 @@
         width: 90%;
         padding: 1.5rem;
     }
+    .transparant h1{
+        font-size: 2rem;
+    }
 
     .main .block {
         display: flex;

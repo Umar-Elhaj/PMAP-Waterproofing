@@ -65,16 +65,16 @@
     gap: 1.5rem;
   }
   
-  nav ul a {
+  nav ul .nav-link {
     color: var(--dark-gray);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     padding: 0.5rem 0;
     position: relative;
     transition: var(--transition);
   }
   
-  nav ul a::after {
+  nav ul .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
@@ -85,7 +85,7 @@
     transition: var(--transition);
   }
   
-  nav ul a:hover::after {
+  nav ul .nav-link:hover::after {
     width: 100%;
   }
   
@@ -96,8 +96,6 @@
   /* Hero section avec effet parallax */
   .photo {
     background: url(/img/etancheite_toit_plat.jpg); 
-    /* background: linear-gradient(rgba(55, 84, 164, 0.85), rgba(55, 84, 164, 0.85)), 
-                url(/img/membrane.jpeg);  */
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -113,8 +111,7 @@
   }
   
   .transparant {
-    /* background-color: rgba(234, 116, 54, 0.9); */
-    background: linear-gradient(90deg, var(--primary-orange), var(--primary-blue));
+    /* background-color: #fff; */
     padding: 3rem;
     border-radius: 12px;
     max-width: 800px;
@@ -124,6 +121,28 @@
     transform: translateY(0);
     transition: var(--transition);
     animation: float 6s ease-in-out infinite;
+  }
+
+  .transparant h1 {
+    font-size: 3.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .transparant p {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: var(--primary-orange);
+    background: #000;
+    border-radius: 0.5rem;
   }
   
   .photo:hover .transparant {
@@ -135,19 +154,12 @@
     50% { transform: translateY(-15px); }
   }
   
-  h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
   
   /* Section discours avec effet de dégradé */
   .discours {
-    background: linear-gradient(90deg, var(--primary-orange), var(--primary-blue));
-    color: #f9f4f4;
-    padding: 5rem 2rem;
+    background: var(--white);
+    color: var(--primary-orange);
+    padding: 3rem 2rem;
     line-height: 1.8;
     position: relative;
     overflow: hidden;
@@ -165,6 +177,7 @@
     z-index: 1;
   }
   
+
   .discours p {
     max-width: 1200px;
     margin: 0 auto;
@@ -172,7 +185,7 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    color: (--white);
+    color: var(--original-white);
   }
   
   /* Main content avec cards modernes */
@@ -202,7 +215,6 @@
     background: linear-gradient(90deg, var(--primary-orange), var(--primary-blue));
     border-radius: 5px;
   }
-  
   
   .main h2::before {
     content: "";
@@ -240,16 +252,14 @@
     margin: 0.5rem;
   }
 
-
   .main .description .paragraph{
     margin: 1rem !important;
   }
-
   
   /* Carousel moderne avec indicateurs */
   .block1 .carousel {
     width: 100%;
-    height: 500px;
+    height: 40rem;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: var(--box-shadow);
@@ -263,7 +273,7 @@
   
   .block1 .carousel img {
     width: 100%;
-    height: 90%;
+    height: 60%;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.3s ease;
   }
@@ -271,85 +281,6 @@
   .block1 .carousel:hover img {
     transform: scale(1.03);
     filter: brightness(1.05);
-  }
-  
-  /* FAQ avec accordéon moderne */
-  #FAQ {
-    padding: 1rem 2rem;
-    position: relative;
-  }
-  
-  #FAQ h1 {
-    color: var(--primary-blue);
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-  }
-  #FAQ p {
-    color: var(--secondary-blue);
-    font-size: 1rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-  }
-  
-  #FAQ li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    height: 1.5rem;
-    width: 2rem;
-    border-radius: 0 1rem 0 1rem;
-    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
-    transform: rotate(-15deg);
-  }
-  
-  #FAQ a {
-    color: var(--primary-blue);
-    text-decoration: none;
-    transition: var(--transition);
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-  }
-  
-  #FAQ a:hover {
-    color: var(--original-white);
-  }
-  
-  #FAQ a:hover::after {
-    width: 100%;
-  }
-  
-  /* Contact section avec formulaire stylé */
-  #contact {
-    padding: 4rem 2rem;
-    background: var(--medium-gray);
-    position: relative;
-  }
-  
-  #contact h2 {
-    color: var(--original-white);
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.8rem;
-    position: relative;
-  }
-  
-  #contact h2::after {
-    content: "";
-    position: absolute;
-    bottom: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 5px;
-    background: linear-gradient(90deg, var(--primary-orange), var(--primary-blue));
-    border-radius: 5px;
   }
   
   /* Footer avec gradient animé */
@@ -450,101 +381,6 @@
   
   .logo:hover {
     transform: scale(1.05);
-  }
-
-  #partenaire img{
-    width: 100%;
-  }
-  
-  /* Services section avec icônes modernes */
-  #service {
-    padding: 6rem 2rem;
-    position: relative;
-  }
-  
-  #service h1{
-    color: var(--primary-blue) !important;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    position: relative;
-    text-align: center;
-  }
-  #service p{
-    color: var(--secondary-blue) !important;
-    font-size: 1rem;
-    text-align: center;
-
-  }
-  
-  #service .headline::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2.5rem;
-    width: 1rem;
-    background: linear-gradient(to bottom, var(--primary-orange), var(--secondary-orange));
-    border-radius: 0.5rem;
-  }
-  
-  /* Engagements section avec effet de carte */
-  #Engagements {
-    padding: 1.5rem 2rem;
-    background-color: var(--primary-blue);
-    border-radius: 2rem;
-  }
-  #Engagements h1{
-    color: var(--original-white);
-  }
-  
-  #Engagements li {
-    margin: 1.5rem 0;
-    padding-left: 3rem;
-    position: relative;
-    list-style-type: none;
-  }
-  
-  #Engagements li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    height: 1.5rem;
-    width: 2rem;
-    border-radius: 50% 50% 0 50%;
-    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
-    transform: rotate(45deg);
-  }
-  
-  /* Valeurs section avec mise en page moderne */
-  #Valeurs {
-    padding: 1.5rem 2rem;
-    background-color: var(--secondary-blue);
-    border-radius: 2rem;
-  }
-
-  #Valeurs h1{
-    color: var(--original-white);
-  }
-  
-  #Valeurs li {
-    margin: 1.5rem 0;
-    padding-left: 3rem;
-    position: relative;
-    list-style-type: none;
-  }
-  
-  #Valeurs li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    height: 1.5rem;
-    width: 2rem;
-    border-radius: 50% 0 50% 50%;
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-    transform: rotate(-45deg);
   }
   
   /* Responsive Design amélioré */
