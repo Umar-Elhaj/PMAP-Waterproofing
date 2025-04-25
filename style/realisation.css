@@ -1,0 +1,59 @@
+/* Général */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2{
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+}
+/* Grille des réalisations */
+.realisations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptabilité */
+    gap: 20px;
+}
+
+.realisation {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Important pour que l'image ne dépasse pas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.realisation img {
+    width: 100%;
+    height: auto; /* Garde les proportions */
+    display: block; /* Supprime l'espace inutile en dessous de l'image */
+}
+
+.realisation p {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Media Queries (pour l'adaptabilité mobile) */
+@media (max-width: 600px) {
+    .realisations-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+}
