@@ -1,5 +1,6 @@
  /* Engagements section avec effet de carte */
  #Engagements {
+    margin-top: 5rem;
     padding: 1.5rem 2rem;
     background-color: var(--primary-blue);
     border-radius: 1.5rem;

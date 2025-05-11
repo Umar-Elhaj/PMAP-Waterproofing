@@ -23,3 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch(error => console.error("Erreur lors du chargement du footer :", error));
   });
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        // Prevent the default link behavior (optional, depending on your needs)
+        // event.preventDefault();
+
+        // Remove 'active' class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        // Add 'active' class to the clicked link
+        this.classList.add('active');
+      });
+    });
+  });

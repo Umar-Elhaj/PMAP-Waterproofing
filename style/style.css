@@ -28,9 +28,9 @@
     background-color: var(--white);
     box-shadow: var(--box-shadow);
     padding: 1.5rem 5%;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 4000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +64,7 @@
     list-style: none;
     gap: 1.5rem;
     text-transform: uppercase;
+    position: relative;
   }
   
   nav ul .nav-link {
@@ -93,6 +94,47 @@
   nav ul a:hover {
     color: var(--primary-orange);
   }
+
+  .nav-link i {
+    font-size: 1.1rem;
+    margin-right: 6px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #f8f9fa; /* Match your navbar bg */
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+    }
+}
   
   /* Hero section avec effet parallax */
   .photo {
@@ -117,8 +159,8 @@
     border-radius: 12px;
     max-width: 800px;
     margin: 0 auto;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* backdrop-filter: blur(0.1px); */
+    /* box-shadow: 0 10px 30px hsl(0, 0%, 95%); */
     transform: translateY(0);
     transition: var(--transition);
     animation: float 6s ease-in-out infinite;
@@ -129,20 +171,22 @@
     margin-bottom: 1.5rem;
     font-weight: 800;
     line-height: 1.2;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* text-shadow: 0 2px 4px rgb(247, 245, 245); */
     text-transform: uppercase;
     color: #fff;
   }
 
   .transparant p {
-    max-width: 1200px;
+    max-width: 350px;
     margin: 0 auto;
     font-size: 1.3rem;
     text-align: center;
+    font-weight: 520;
+    padding: 0 0;
     position: relative;
     z-index: 2;
     color: var(--primary-orange);
-    background: #000;
+    background: hwb(0 98% 1%);
     border-radius: 0.5rem;
   }
   

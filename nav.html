@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<nav class="navbar navbar-expand-lg fixed-top mg-bt-2 bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
       <img src="/img/logo.jpg" alt="Logo PMAP" height="40" class="d-inline-block align-top me-2">
@@ -10,27 +11,63 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">ACCUEIL</a>
+          <a class="nav-link active"  href="index.html">
+            <i class='bx bx-home-alt-2'></i> ACCUEIL
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Engagements.html">NOS ENGAGEMENTS</a>
+          <a class="nav-link " href="Engagements.html">
+            <i class='bx bx-check-shield'></i> ENGAGEMENTS
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Service.html">NOS SERVICES</a>
+          <a class="nav-link" href="Service.html">
+            <i class='bx bx-wrench'></i> SERVICES
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="Réalisation.html" >NOS Réalisation</a>
+          <a class="nav-link" href="produits.html">
+            <i class='bx bx-package'></i> PRODUITS
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="FAQ.html">FAQ</a>
+          <a class="nav-link" href="Réalisation.html">
+            <i class='bx bx-building-house'></i> RÉALISATIONS
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Contact.html">CONTACT</a>
+          <a class="nav-link" href="FAQ.html">
+            <i class='bx bx-question-mark'></i> FAQ
+          </a>
         </li>
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-primary rounded-pill px-4" href="Contact.html">Devis Gratuit</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">
+            <i class='bx bx-envelope'></i> CONTACT
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<style>
+  /* Couleur orange pour les liens actifs */
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.active i {
+    color: #EA7436 !important;
+    font-weight: 600;
+  }
+  
+  /* Animation au survol */
+  .navbar-nav .nav-link:not(.active) {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:not(.active):hover,
+  .navbar-nav .nav-link:not(.active):hover i {
+    color: #EA7436 !important;
+  }
+</style>
+
+
+
